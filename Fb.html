@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - DiyFoods</title>
+  <link rel="stylesheet" href="Fb.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="Food/pics/LO g.png" alt="DiyFood Logo" width="200" height="200">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="abo.html">About Us</a></li>
+        <li><a href="Rec table.html">Recommended Time Table</a></li>
+        <li><a href="Fb.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="feedback">
+      <h2>Give Us Your Feedback</h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="rating">Rate Your Experience:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select</option>
+          <option value="5">★★★★★ Excellent</option>
+          <option value="4">★★★★ Good</option>
+          <option value="3">★★★ Average</option>
+          <option value="2">★★ Poor</option>
+          <option value="1">★ Very Poor</option>
+        </select>
+
+        <label for="suggestion">Suggestions:</label>
+        <textarea id="suggestion" name="suggestion" rows="5" placeholder="Your suggestions..." required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="thankyouMsg" style="display:none;">Thank you for your feedback!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 DiyFoods. All rights reserved.</p>
+    <p>Follow us: 
+      <a href="https://www.instagram.com/">Instagram</a> | 
+      <a href="https://x.com/?lang=en">Twitter</a> | 
+      <a href="https://www.facebook.com/">Facebook</a>
+    </p>
+  </footer>
+
+</body>
+</html>
